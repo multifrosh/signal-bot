@@ -7,7 +7,7 @@ COOLDOWN_DAYS = 15
 
 # number of attempts to download data
 TRY_COUNT = 3
-DAILY_NOTIFICATION = False # Write True to send a daily notification, False to only send notifications when the signal changes
+DAILY_NOTIFICATION = True # Write True to send a daily notification, False to only send notifications when the signal changes
 
 # main subjects
 MAIN_SIGNAL_CHANGE_LONG = f"GO LONG NOW (cooldown activated for {0} days)"
