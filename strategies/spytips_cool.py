@@ -137,4 +137,7 @@ def spy_tips_cool():
     text += f"The TIPS signal remains {tips_indicator}" if tips_indicator == last_tips_indicator else f"The TIPS signal has changed to {tips_indicator}"
     text += f" with a difference of {tips_diff.iloc[-1]:.2%}\n"
 
+    if DAILY_NOTIFICATION and subject == "" and subject2 == "":
+        subject = "Daily Notification"
+
     return subject, subject2, text
